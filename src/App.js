@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react'
+import { Button } from './stories/Button'
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{textAlign:"center", marginTop:"20px", }}>
+      <Button size="small " label="ADD NEW MAPPING"  sx={{borderRadius: '6px', backgroundColor: 'black' ,padding:"12px 16px"}}/>
+      <Button size="small " label="Active" sx={{borderRadius: '15px', backgroundColor: 'green' ,}}/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
